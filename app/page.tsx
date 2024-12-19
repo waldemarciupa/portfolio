@@ -1,21 +1,26 @@
-import { BlogPosts } from 'app/components/posts'
-
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
+      <AboutSection />
     </section>
-  )
+  );
+}
+
+function AboutSection() {
+  return (
+    <div className='space-y-4'>
+      <h2 className='text-2xl font-semibold text-gray-200 mb-4'>About Me</h2>
+      <p className='text-gray-400'>
+        I'm a passionate frontend developer with a keen eye for creating
+        intuitive and efficient web applications. With a strong foundation in
+        React and TypeScript, I strive to build seamless user experiences that
+        blend functionality with aesthetic appeal.
+      </p>
+      <p className='text-gray-400'>
+        As a lifelong learner, I'm constantly exploring new technologies and
+        methodologies to stay at the forefront of web development. My goal is to
+        craft digital solutions that not only meet but exceed user expectations.
+      </p>
+    </div>
+  );
 }

@@ -5,7 +5,7 @@ import X from './icons/x';
 
 export default function Footer() {
   return (
-    <footer className='my-16 text-center'>
+    <footer className='mt-10 sm:my-16 text-center'>
       <div className='flex flex-wrap justify-center gap-4'>
         <SocialLink
           href='https://github.com/waldemarciupa'
@@ -23,7 +23,7 @@ export default function Footer() {
           label='@waldemarciupa'
         />
       </div>
-      <p className='mt-16 text-neutral-600 dark:text-neutral-300 '>
+      <p className='mt-8 sm:mt-16 text-neutral-600 dark:text-neutral-300 '>
         © {new Date().getFullYear()} Waldemar Ciupa. All rights reserved.
       </p>
     </footer>

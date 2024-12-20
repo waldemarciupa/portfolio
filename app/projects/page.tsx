@@ -1,4 +1,10 @@
+import ArrowUpRight from 'app/components/icons/arrow-up-right';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Projects',
+  description: 'My projects',
+};
 
 export default function Page() {
   return <ProjectsSection />;
@@ -36,11 +42,15 @@ function ProjectCard({
   link: string;
 }) {
   return (
-    <Link href={link} className='flex justify-between items-start'>
+    <Link
+      href={link}
+      className='flex justify-between items-start p-4 rounded-lg border border-gray-800 hover:border-gray-700'
+    >
       <div>
         <h3 className='font-medium text-gray-200'>{title}</h3>
         <p className='text-sm text-gray-400 mt-1'>{description}</p>
       </div>
+      <ArrowUpRight className='w-4 h-4 text-gray-400' />
     </Link>
   );
 }

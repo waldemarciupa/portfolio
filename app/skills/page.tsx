@@ -40,7 +40,7 @@ function SkillsSection() {
           </span>
         ))}
       </div>
-      <div className='mt-16 text-center'>
+      <div className='mt-10 sm:mt-16 text-center'>
         <a
           href='/waldemar-ciupa-cv.pdf'
           download

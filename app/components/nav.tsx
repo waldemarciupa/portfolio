@@ -17,7 +17,7 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <div className='mt-16'>
+    <div className='mt-8 sm:mt-16'>
       <div className='text-center'>
         <h1 className='text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text'>
           Waldemar Ciupa
@@ -27,10 +27,10 @@ export function Navbar() {
         </p>
       </div>
       <nav
-        className='flex justify-center space-x-4 relative mt-12 px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative'
+        className='flex justify-center space-x-4 relative my-8 sm:mt-12 px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative'
         id='nav'
       >
-        <div className='flex flex-row space-x-0 pr-10'>
+        <div className='flex flex-row space-x-0'>
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
               <Link

@@ -55,8 +55,8 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className='h-screen bg-black text-white flex flex-col items-center'>
-        <main className='h-screen max-w-3xl w-full flex flex-col justify-between p-8'>
+      <body className='sm:h-screen bg-black text-white flex flex-col items-center'>
+        <main className='sm:h-screen max-w-3xl w-full flex flex-col justify-between p-8'>
           <Navbar />
           {children}
           <Footer />

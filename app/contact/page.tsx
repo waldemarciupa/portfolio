@@ -1,5 +1,10 @@
 import Mail from 'app/components/icons/mail';
 
+export const metadata = {
+  title: 'Contact',
+  description: 'Contact me',
+};
+
 export default function Page() {
   return <ContactSection />;
 }

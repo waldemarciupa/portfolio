@@ -17,11 +17,11 @@ export default function Footer() {
           icon={<Linkedin size={16} color='#ffffff' />}
           label='LinkedIn'
         />
-        <SocialLink
+        {/* <SocialLink
           href='https://x.com/waldemarciupa'
           icon={<X size={16} color='#ffffff' />}
           label='@waldemarciupa'
-        />
+        /> */}
       </div>
       <p className='mt-8 sm:mt-16 text-neutral-600 dark:text-neutral-300 '>
         © {new Date().getFullYear()} Waldemar Ciupa. All rights reserved.

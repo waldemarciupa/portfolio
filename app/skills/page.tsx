@@ -41,13 +41,6 @@ function SkillsSection() {
         ))}
       </div>
       <div className='mt-10 sm:mt-16 text-center'>
-        <a
-          href='/waldemar-ciupa-cv.pdf'
-          download
-          className='inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors'
-        >
-          Download CV
-        </a>
       </div>
     </div>
   );
